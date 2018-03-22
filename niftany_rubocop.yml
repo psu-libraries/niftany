@@ -1,0 +1,5 @@
+---
+inherit_from:
+  - niftany_rubocop_rails.yml
+  - niftany_rubocop_rspec.yml
+  - niftany_rubocop_ruby.yml
