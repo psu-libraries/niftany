@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift("#{__dir__}/../lib")
+
+require 'rubocop'
+require 'erb_lint/cli'
+require 'scss_lint'
+require 'scss_lint/cli'
+require 'colorize'
+
+result = 0
+
+puts 'Running Rubocop'.yellow
+rubocop = RuboCop::CLI.new.run # returns integer
+
+if rubocop.zero?
+  puts 'Rubocop OK!'.green
+else
+  result = 1
+  puts 'Rubocop FAILED!'.red
+end
+
+puts 'Running ERBLint'.yellow
+erblint = ERBLint::CLI.new.run(['--lint-all']) # returns boolean
+
+if erblint
+  puts 'ERBLint OK!'.green
+else
+  result = 1
+  puts 'ERBLint FAILED!'.red
+end
+
+puts 'Running SCSSLint'.yellow
+logger = SCSSLint::Logger.new(STDOUT)
+scss_lint = SCSSLint::CLI.new(logger).run(ARGV) # returns integer
+
+if scss_lint.zero?
+  puts 'SCSSLint OK!'.green
+else
+  result = 1
+  puts 'SCSSLint FAILED!'.red
+end
+
+exit result

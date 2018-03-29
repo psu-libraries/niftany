@@ -22,6 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
+To run all the linters at once:
+
+    $ bundle exec niftany
+
 Setup and run each linter accordingly:
 
 ### Rubocop
@@ -37,10 +41,12 @@ Then run:
 
 ### erb-lint
 
-Copy `niftany_erblint.yml` to your local repo and run:
+Copy `niftany_erblint.yml` to `.erb-lint.yml` in your local repo and run:
 
     $ bundle exec erblint --lint-all --autocorrect
 
 ### scss-lint
+
+Copy `niftany_scsslint.yml` to `.scss-lint.yml` in your local repo and run:
 
     $ bundle exec scss-lint
