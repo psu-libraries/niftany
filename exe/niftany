@@ -9,10 +9,41 @@ require 'scss_lint'
 require 'scss_lint/cli'
 require 'colorize'
 
+def parse_opts(args)
+  options = OpenStruct.new
+  options.auto_correct = false
+
+  parser = OptionParser.new do |opts|
+    opts.banner = 'Usage: niftany [options]'
+
+    opts.on('-a', '--auto-correct', 'Correct violations') do |auto|
+      options.auto_correct = auto
+    end
+
+    opts.on_tail('-h', '--help', 'Show this message') do
+      puts opts
+      exit
+    end
+  end
+  parser.parse!(args)
+  options
+end
+
+def rubocop_options(options)
+  return [] unless options.auto_correct
+  ['--auto-correct']
+end
+
+def erblint_options(options)
+  return ['--lint-all'] unless options.auto_correct
+  ['--lint-all', '--autocorrect']
+end
+
+options = parse_opts(ARGV)
 result = 0
 
 puts 'Running Rubocop'.yellow
-rubocop = RuboCop::CLI.new.run # returns integer
+rubocop = RuboCop::CLI.new.run(rubocop_options(options)) # returns integer
 
 if rubocop.zero?
   puts 'Rubocop OK!'.green
@@ -22,7 +53,7 @@ else
 end
 
 puts 'Running ERBLint'.yellow
-erblint = ERBLint::CLI.new.run(['--lint-all']) # returns boolean
+erblint = ERBLint::CLI.new.run(erblint_options(options)) # returns boolean
 
 if erblint
   puts 'ERBLint OK!'.green
