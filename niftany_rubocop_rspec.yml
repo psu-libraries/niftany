@@ -40,3 +40,6 @@ RSpec/InstanceVariable:
 
 RSpec/DescribeClass:
   Enabled: true
+
+RSpec/BeforeAfterAll:
+  Enabled: false
