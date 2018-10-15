@@ -37,6 +37,8 @@ linters:
       Rails/OutputSafety:
         Enabled: false
   SelfClosingTag:
+    enabled: false
+  SelfClosingTagCustom:
     enabled: true
   SpaceAroundErbTag:
     enabled: true
