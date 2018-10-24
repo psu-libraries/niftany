@@ -1,4 +1,6 @@
 
+# frozen_string_literal: true
+
 Gem::Specification.new do |spec|
   spec.name          = 'niftany'
   spec.version       = '0.2.0'
@@ -12,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
+  spec.add_dependency 'colorize',      '~> 0.8.1'
   spec.add_dependency 'erb_lint',      '~> 0.0.22'
   spec.add_dependency 'rubocop',       '~> 0.51', '<= 0.52.1'
   spec.add_dependency 'rubocop-rspec', '~> 1.22', '<= 1.22.2'
