@@ -1,14 +1,4 @@
 ---
-AllCops:
-  Include:
-    - '**/Rakefile'
-    - '**/config.ru'
-  Exclude:
-    - 'db/**/*'
-    - 'script/**/*'
-    - 'tmp/**/*'
-    - 'vendor/**/*'
-
 Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
   Enabled: false

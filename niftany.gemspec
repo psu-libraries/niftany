@@ -1,4 +1,3 @@
-
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
@@ -16,8 +15,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'colorize',      '~> 0.8.1'
   spec.add_dependency 'erb_lint',      '~> 0.0.22'
-  spec.add_dependency 'rubocop',       '~> 0.51', '<= 0.52.1'
-  spec.add_dependency 'rubocop-rspec', '~> 1.22', '<= 1.22.2'
+  spec.add_dependency 'rubocop',       '~> 0.61'
+  spec.add_dependency 'rubocop-rspec', '~> 1.3'
   spec.add_dependency 'scss_lint',     '~> 0.55'
 
   spec.add_development_dependency 'bundler', '~> 1.16'
