@@ -1,6 +1,5 @@
 ---
 AllCops:
-  TargetRubyVersion: 2.3
   DisplayCopNames: true
 
 Naming/AccessorMethodName:
@@ -356,7 +355,7 @@ Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: no_comma
   Enabled: true
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
   Description: >-
                 Checks for trailing comma in array and hash literals. Supported styles are:
                   comma
@@ -472,7 +471,7 @@ Lint/CircularArgumentReference:
   Description: "Don't refer to the keyword argument in the default value."
   Enabled: false
 
-Lint/ConditionPosition:
+Layout/ConditionPosition:
   Description: >-
                  Checks for condition placed in a confusing position relative to
                  the keyword.
@@ -543,13 +542,6 @@ Lint/RequireParentheses:
 
 Lint/UnderscorePrefixedVariableName:
   Description: 'Do not use prefix `_` for a variable that is used.'
-  Enabled: false
-
-Lint/UnneededDisable:
-  Description: >-
-                 Checks for rubocop:disable comments that can be removed.
-                 Note: this cop is not disabled when disabling all cops.
-                 It must be explicitly disabled.
   Enabled: false
 
 Lint/Void:

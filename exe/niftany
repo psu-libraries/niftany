@@ -31,11 +31,13 @@ end
 
 def rubocop_options(options)
   return [] unless options.auto_correct
+
   ['--auto-correct']
 end
 
 def erblint_options(options)
   return ['--lint-all'] unless options.auto_correct
+
   ['--lint-all', '--autocorrect']
 end
 
