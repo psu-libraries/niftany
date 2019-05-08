@@ -13,12 +13,13 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
-  spec.add_dependency 'colorize',      '~> 0.8.1'
-  spec.add_dependency 'erb_lint',      '~> 0.0.22'
-  spec.add_dependency 'rubocop',       '~> 0.61'
+  spec.add_dependency 'colorize', '~> 0.8.1'
+  spec.add_dependency 'erb_lint', '~> 0.0.22'
+  spec.add_dependency 'rubocop', '~> 0.61'
+  spec.add_dependency 'rubocop-performance', '~> 1.1'
   spec.add_dependency 'rubocop-rspec', '~> 1.3'
-  spec.add_dependency 'scss_lint',     '~> 0.55'
+  spec.add_dependency 'scss_lint', '~> 0.55'
 
-  spec.add_development_dependency 'bundler', '~> 1.16'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'bundler', '~> 2.0'
+  spec.add_development_dependency 'rake', '~> 12.0'
 end
