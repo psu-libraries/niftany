@@ -41,7 +41,7 @@ Layout/ConditionPosition:
 
 Layout/IndentationConsistency:
   Description: 'Checks for inconsistent indentation.'
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 Layout/MultilineBlockLayout:
   Description: 'Checks whether the multiline do end blocks have a newline after the start of the block.'
