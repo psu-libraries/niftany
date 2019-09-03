@@ -1,4 +1,6 @@
 ---
+require: rubocop-rails
+
 Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
   Enabled: false

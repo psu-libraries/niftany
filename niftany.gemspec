@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'erb_lint', '~> 0.0.22'
   spec.add_dependency 'rubocop', '~> 0.61'
   spec.add_dependency 'rubocop-performance', '~> 1.1'
+  spec.add_dependency 'rubocop-rails', '~> 2.3'
   spec.add_dependency 'rubocop-rspec', '~> 1.3'
   spec.add_dependency 'scss_lint', '~> 0.55'
 
