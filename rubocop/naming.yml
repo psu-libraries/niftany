@@ -21,7 +21,7 @@ Naming/BinaryOperatorParameterName:
 Naming/PredicateName:
   Description: 'Check the names of predicate methods.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#bool-methods-qmark'
-  NamePrefixBlacklist:
+  ForbiddenPrefixes:
     - is_
 
 Naming/VariableName:

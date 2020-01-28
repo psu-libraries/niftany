@@ -25,7 +25,7 @@ Lint/DeprecatedClassMethods:
   Description: 'Check for deprecated class method calls.'
   Enabled: false
 
-Lint/DuplicatedKey:
+Lint/DuplicateHashKey:
   Description: 'Check for duplicate keys in hash literals.'
   Enabled: true
 
@@ -41,7 +41,7 @@ Lint/FormatParameterMismatch:
   Description: 'The number of parameters to format/sprint must match the fields.'
   Enabled: false
 
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Description: "Don't suppress exception."
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#dont-hide-exceptions'
   Enabled: false
