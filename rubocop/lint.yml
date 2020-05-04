@@ -101,3 +101,10 @@ Lint/UselessAssignment:
                 Checks for every useless assignment to local variable in every scope.
                 The basic idea for this cop was from the warning of `ruby -cw`:'
   Enabled: true
+
+Lint/RaiseException:
+  Description: 'This cop checks for raise or fail statements which are raising Exception class.'
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true

@@ -52,3 +52,6 @@ Layout/LineLength:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#80-character-limits'
   Enabled: true
   Max: 120
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true

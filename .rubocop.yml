@@ -1,2 +1,2 @@
-inherit_from: .rubocop_todo.yml
+inherit_from: niftany_rubocop.yml
 
