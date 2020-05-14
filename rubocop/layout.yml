@@ -55,3 +55,6 @@ Layout/LineLength:
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
