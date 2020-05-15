@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'niftany'
-  spec.version       = '0.7.0'
+  spec.version       = '0.8.0'
   spec.authors       = ['Adam Wead']
   spec.email         = ['amsterdamos@gmail.com']
   spec.summary       = 'Manages configurations and versions of linters used in projects at '\
