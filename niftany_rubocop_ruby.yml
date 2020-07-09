@@ -9,3 +9,4 @@ inherit_from:
 
 AllCops:
   DisplayCopNames: true
+  NewCops: enable
