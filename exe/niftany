@@ -71,7 +71,7 @@ else
 end
 
 puts 'Running SCSSLint'.yellow
-logger = SCSSLint::Logger.new(STDOUT)
+logger = SCSSLint::Logger.new($stdout)
 scss_lint = SCSSLint::CLI.new(logger).run(ARGV) # returns integer
 
 if scss_lint.zero?
