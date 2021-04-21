@@ -12,12 +12,17 @@ require 'colorize'
 def parse_opts(args)
   options = OpenStruct.new
   options.auto_correct = false
+  options.parallel = false
 
   parser = OptionParser.new do |opts|
     opts.banner = 'Usage: niftany [options]'
 
     opts.on('-a', '--auto-correct', 'Correct violations') do |auto|
       options.auto_correct = auto
+    end
+
+    opts.on('-p', '--parallel', 'Run RuboCop in parallel') do |parallel|
+      options.parallel = parallel
     end
 
     opts.on_tail('-h', '--help', 'Show this message') do
@@ -30,9 +35,10 @@ def parse_opts(args)
 end
 
 def rubocop_options(options)
-  return [] unless options.auto_correct
-
-  ['--auto-correct']
+  rubocop_options = []
+  rubocop_options.append('--auto-correct') if options.auto_correct
+  rubocop_options.append('--parallel') if options.parallel
+  rubocop_options
 end
 
 def erblint_options(options)
