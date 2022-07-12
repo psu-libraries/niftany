@@ -10,7 +10,7 @@ require 'scss_lint/cli'
 require 'colorize'
 
 def parse_opts(args)
-  options = OpenStruct.new
+  options = Struct.new
   options.auto_correct = false
   options.parallel = false
 
