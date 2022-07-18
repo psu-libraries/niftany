@@ -10,9 +10,7 @@ require 'scss_lint/cli'
 require 'colorize'
 
 def parse_opts(args)
-  options = Struct.new
-  options.auto_correct = false
-  options.parallel = false
+  options = Struct.new('Options', :auto_correct, :parallel).new
 
   parser = OptionParser.new do |opts|
     opts.banner = 'Usage: niftany [options]'
