@@ -15,7 +15,7 @@ def parse_opts(args)
   parser = OptionParser.new do |opts|
     opts.banner = 'Usage: niftany [options]'
 
-    opts.on('-a', '--auto-correct', 'Correct violations') do |auto|
+    opts.on('-a', '--autocorrect', 'Correct violations') do |auto|
       options.auto_correct = auto
     end
 
@@ -34,7 +34,7 @@ end
 
 def rubocop_options(options)
   rubocop_options = []
-  rubocop_options.append('--auto-correct') if options.auto_correct
+  rubocop_options.append('--autocorrect') if options.auto_correct
   rubocop_options.append('--parallel') if options.parallel
   rubocop_options
 end
