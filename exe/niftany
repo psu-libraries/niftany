@@ -11,6 +11,8 @@ require 'colorize'
 
 def parse_opts(args)
   options = Struct.new('Options', :auto_correct, :parallel).new
+  options.auto_correct = false
+  options.parallel = false
 
   parser = OptionParser.new do |opts|
     opts.banner = 'Usage: niftany [options]'
