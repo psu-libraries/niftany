@@ -1,12 +1,6 @@
 ---
 require: rubocop-rspec
 
-AllCops:
-  RSpec:
-    Patterns:
-    - _spec.rb
-    - "(?:^|/)spec/"
-
 Layout/MultilineBlockLayout:
   Exclude:
     - 'spec/**/*'
