@@ -9,5 +9,5 @@
 
 # rspec failure tracking
 .rspec_status
-niftany-0.0.1.gem
+niftany-*.gem
 Gemfile.lock
