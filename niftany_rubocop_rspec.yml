@@ -1,5 +1,9 @@
 ---
-require: rubocop-rspec
+plugins: rubocop-rspec
+require:
+  - rubocop-rspec_rails
+  - rubocop-factory_bot
+  - rubocop-capybara
 
 Layout/MultilineBlockLayout:
   Exclude:

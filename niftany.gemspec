@@ -22,5 +22,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-performance', '~> 1.24'
   spec.add_dependency 'rubocop-rails', '~> 2.30'
   spec.add_dependency 'rubocop-rspec', '~> 3.5'
+  spec.add_dependency 'rubocop-rspec_rails', '~> 2.30'
+  spec.add_dependency 'rubocop-factory_bot', '~> 2.26'
+  spec.add_dependency 'rubocop-capybara', '~> 2.21'
   spec.add_dependency 'scss_lint', '~> 0.60'
 end
