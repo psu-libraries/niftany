@@ -30,7 +30,7 @@ RSpec/ExampleWording:
   IgnoredWords:
     - only
 
-RSpec/FilePath:
+Rails/FilePath:
   Enabled: false
 
 RSpec/InstanceVariable:
