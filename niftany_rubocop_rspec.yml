@@ -1,5 +1,9 @@
 ---
-require: rubocop-rspec
+plugins: rubocop-rspec
+require:
+  - rubocop-rspec_rails
+  - rubocop-factory_bot
+  - rubocop-capybara
 
 Layout/MultilineBlockLayout:
   Exclude:
@@ -26,7 +30,7 @@ RSpec/ExampleWording:
   IgnoredWords:
     - only
 
-RSpec/FilePath:
+Rails/FilePath:
   Enabled: false
 
 RSpec/InstanceVariable:

@@ -8,6 +8,6 @@ inherit_from:
   - rubocop/style.yml
 
 AllCops:
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.4
   DisplayCopNames: true
   NewCops: enable

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'niftany'
-  spec.version       = '0.11.0'
+  spec.version       = '0.12.0'
   spec.metadata      = { 'rubygems_mfa_required' => 'true' }
   spec.authors       = ['Adam Wead']
   spec.email         = ['amsterdamos@gmail.com']
@@ -14,13 +14,16 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
-  spec.required_ruby_version = '>= 3.1'
+  spec.required_ruby_version = '>= 3.4'
 
-  spec.add_dependency 'colorize', '~> 0.8.1'
-  spec.add_dependency 'erb_lint', '~> 0.0.22'
-  spec.add_dependency 'rubocop', '~> 1.3'
-  spec.add_dependency 'rubocop-performance', '~> 1.1'
-  spec.add_dependency 'rubocop-rails', '~> 2.3'
-  spec.add_dependency 'rubocop-rspec', '~> 2'
-  spec.add_dependency 'scss_lint', '~> 0.55'
+  spec.add_dependency 'colorize', '~> 1.1.0'
+  spec.add_dependency 'erb_lint', '~> 0.9.0'
+  spec.add_dependency 'rubocop', '~> 1.72'
+  spec.add_dependency 'rubocop-capybara', '~> 2.21'
+  spec.add_dependency 'rubocop-factory_bot', '~> 2.26'
+  spec.add_dependency 'rubocop-performance', '~> 1.24'
+  spec.add_dependency 'rubocop-rails', '~> 2.30'
+  spec.add_dependency 'rubocop-rspec', '~> 3.5'
+  spec.add_dependency 'rubocop-rspec_rails', '~> 2.30'
+  spec.add_dependency 'scss_lint', '~> 0.60'
 end
