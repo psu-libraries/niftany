@@ -19,8 +19,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'colorize', '~> 1.1.0'
   spec.add_dependency 'erb_lint', '~> 0.9.0'
   spec.add_dependency 'rubocop', '~> 1.72'
-  spec.add_dependency 'rubocop-performance', '~> 1.1'
-  spec.add_dependency 'rubocop-rails', '~> 2.3'
-  spec.add_dependency 'rubocop-rspec', '~> 2'
-  spec.add_dependency 'scss_lint', '~> 0.55'
+  spec.add_dependency 'rubocop-performance', '~> 1.24'
+  spec.add_dependency 'rubocop-rails', '~> 2.30'
+  spec.add_dependency 'rubocop-rspec', '~> 3.5'
+  spec.add_dependency 'scss_lint', '~> 0.60'
 end
