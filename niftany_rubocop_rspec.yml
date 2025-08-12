@@ -1,6 +1,6 @@
 ---
-plugins: rubocop-rspec
-require:
+plugins: 
+  - rubocop-rspec
   - rubocop-rspec_rails
   - rubocop-factory_bot
   - rubocop-capybara
@@ -9,7 +9,7 @@ Layout/MultilineBlockLayout:
   Exclude:
     - 'spec/**/*'
 
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Exclude:
     - spec/**/*
 
