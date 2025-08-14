@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'niftany'
-  spec.version       = '0.12.0'
+  spec.version       = '0.12.1'
   spec.metadata      = { 'rubygems_mfa_required' => 'true' }
   spec.authors       = ['Adam Wead']
   spec.email         = ['amsterdamos@gmail.com']
