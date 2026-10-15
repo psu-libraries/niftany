@@ -50,3 +50,11 @@ Copy `niftany_erblint.yml` to `.erb-lint.yml` in your local repo and run:
 Copy `niftany_scsslint.yml` to `.scss-lint.yml` in your local repo and run:
 
     $ bundle exec scss-lint
+
+## Dependencies
+
+To see an output of the latest versions of dependencies in the `.gemspec` file, run:
+
+```bash
+ruby bin/check-dependencies.rb
+```
